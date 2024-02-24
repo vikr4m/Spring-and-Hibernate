@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -20,4 +21,28 @@
 	<bean class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor"/>
 	
 	
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans
+ 		http://www.springframework.org/schema/beans/spring-beans.xsd
+ 		http://www.springframework.org/schema/context
+ 		http://www.springframework.org/schema/context/spring-context.xsd">
+	
+	<!-- <context:annotation-config></context:annotation-config> -->
+	
+
+	
+	<bean class="com.springcore.lifecycle.Cake" name="c1">
+		<property name="flavour" value="Chocolate"/> 
+	</bean> 
+	
+	<bean class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor"/>
+	
+	
+>>>>>>> 4efed25b0e512d50bf1a291a4a349be7f9da6b93
 </beans>

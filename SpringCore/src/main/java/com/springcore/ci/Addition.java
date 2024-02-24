@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 package com.springcore.ci;
 
 public class Addition {
@@ -20,3 +21,27 @@ public class Addition {
 		System.out.println("Sum is: "+(this.a + this.b));
 	}
 }
+=======
+package com.springcore.ci;
+
+public class Addition {
+	private int a;
+	private int b;
+	
+	public Addition(int a, int b) {
+		this.a = a;
+		this.b = b;
+		System.out.println("Constructor: int,int");
+	}
+	
+	public Addition(double a, double b) {
+		this.a = (int)a;
+		this.b = (int)b;
+		System.out.println("Constructor: double,double");
+	}
+	
+	public void dosum() {
+		System.out.println("Sum is: "+(this.a + this.b));
+	}
+}
+>>>>>>> 4efed25b0e512d50bf1a291a4a349be7f9da6b93

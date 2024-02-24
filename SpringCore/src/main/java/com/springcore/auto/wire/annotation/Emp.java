@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 package com.springcore.auto.wire.annotation;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -33,3 +34,40 @@ public class Emp {
 	
 	
 }
+=======
+package com.springcore.auto.wire.annotation;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+
+public class Emp {
+	@Autowired
+	@Qualifier("temp1")
+	private Address address;
+
+	public Address getAddress() {
+		return address;
+	}
+
+	public void setAddress(Address address) {
+		this.address = address;
+	}
+
+	public Emp() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	public Emp(Address address) {
+		super();
+		this.address = address;
+	}
+
+	@Override
+	public String toString() {
+		return "Emp [address=" + address + "]";
+	}
+	
+	
+}
+>>>>>>> 4efed25b0e512d50bf1a291a4a349be7f9da6b93
